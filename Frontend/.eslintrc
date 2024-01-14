@@ -1,0 +1,48 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "plugin:import/recommended",
+    "prettier"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": "latest"
+  },
+  "rules": {
+    "@typescript-eslint/no-unused-vars": "off",
+    "no-console": "warn",
+    "quotes": [
+      "error",
+      "double"
+    ],
+    "jsx-quotes": [
+      "error",
+      "prefer-double"
+    ],
+    "prefer-const": "error",
+    "indent": [
+      "error",
+      2
+    ],
+    "max-len": [
+      "error",
+      {
+        "code": 120
+      }
+    ],
+    "comma-dangle": [
+      "error",
+      "always-multiline"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "array-bracket-spacing": "error",
+    "arrow-parens": "error"
+  }
+}
